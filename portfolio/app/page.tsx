@@ -8,7 +8,6 @@ import { FlipWords } from "@/components/ui/flip-words";
 import PersonalLogo from "@/images/ALogo.png"
 import Image from 'next/image';
 import ShiftingCountdown from "@/components/ui/countdown";
-import  BarPoll  from "@/components/ui/barpoll"
 
 
 export default function Home()  {
@@ -83,7 +82,7 @@ const HeaderBlock = () => (
       className="mb-4 size-14 rounded-full"
     />
     <h1 className="mb-12 text-2xl md:text-4xl font-medium leading-tight">
-      Hi, I'm Aaron.{" "}
+      Hi, I am Aaron.
       <span className="text-zinc-400">
         I am a <FlipWords words={words} className="text-yellow-500 text-2xl md:text-4xl"/> <br />
 
