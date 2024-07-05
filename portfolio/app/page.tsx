@@ -8,6 +8,7 @@ import { FlipWords } from "@/components/ui/flip-words";
 import PersonalLogo from "@/images/ALogo.png"
 import Image from 'next/image';
 import ShiftingCountdown from "@/components/ui/countdown";
+import  BarPoll  from "@/components/ui/barpoll"
 
 
 export default function Home()  {
@@ -163,13 +164,13 @@ const AboutBlock = () => (
     <p>
       My passion is building impactful stuff.{" "}
       <span className="text-zinc-400">
-        I love building applications with React, but I have experience in other programming languages too! Check out my resume.
+        I love building applications with React, but I have experience in other programming languages too!
       </span>
       <a
-      href="/resume"
+      href="/skills"
       className="flex items-center gap-1 text-yellow-500 hover:underline text-sm mt-2"
     >
-      View My Resume <FiArrowRight />
+      View My Skills <FiArrowRight />
     </a>
     </p>
   </Block>
@@ -184,7 +185,7 @@ const LocationBlock = () => (
 
 const EmailListBlock = () => (
   <Block className="col-span-12 md:col-span-9">
-    <p className="mb-3 text-lg">Join my mailing list</p>
+    <p className="mb-3 text-lg">Drop your email here!</p>
     <form
       onSubmit={(e) => e.preventDefault()}
       className="flex items-center gap-2"
@@ -198,7 +199,7 @@ const EmailListBlock = () => (
         type="submit"
         className="flex items-center gap-2 whitespace-nowrap rounded bg-zinc-50 px-3 py-2 text-sm font-medium text-zinc-900 transition-colors hover:bg-zinc-300"
       >
-        <FiMail /> Join the list
+        <FiMail /> Submit
       </button>
     </form>
   </Block>
